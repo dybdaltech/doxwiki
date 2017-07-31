@@ -56,6 +56,8 @@ router.get('/edit/:id', function(req, res){
 
 router.post('/edit/:id', function (req, res){
   //let changeAsset = new Asset();
+  //Not everything here works, IPADRESSE returns error along with Navn
+  //
   let changeAsset = {};
   changeAsset.name = req.body.Navn;
   changeAsset.Lokasjon = req.body.lokasjon;
