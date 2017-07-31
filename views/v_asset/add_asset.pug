@@ -1,0 +1,21 @@
+extends ..\layout
+block content
+    form(method='POST', action='/assets/add')
+      #form-group
+        label Navn
+        input.form-control(name="Navn" type="text")
+      #form-group
+        label OperatingSystem
+        input.form-control(name="operatingsystem", type="text")
+        br
+        label Lokasjon
+        input.form-control(name="lokasjon" type="text")
+        label Bruker
+        input.form-control(name="bruker" type="text")
+        label IP-Adresse
+        input.form-control(name="IPADRESSE" type="text")
+        label MACAdresse
+        input.form-control(name="MACADRESSE" type="text")
+        label Tilkoblinger
+        input.form-control(name="Tilkobling" type="text")
+        input.btn.btn-primary(type="submit", value="submit")

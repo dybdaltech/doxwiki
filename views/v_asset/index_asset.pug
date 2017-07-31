@@ -1,0 +1,7 @@
+extends ..\layout
+block content
+    a(href="/assets/add") Add asset
+    ul.list-group
+      each comp, i in assets
+        li.list-group-item
+          a(href="/asset/edit/"+asset._id)= asset.Navn
